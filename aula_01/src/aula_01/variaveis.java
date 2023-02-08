@@ -11,7 +11,7 @@ public class variaveis {
 		Scanner leia = new Scanner(System.in);
 		
 		int numero = 10;
-		String nome = "Rony dos Santos";
+		String nome = "Natanael S. bento";
 		double area = 45.28523852593285;
 		
 		
