@@ -7,21 +7,19 @@ public class ecercicio4 {
 	public static void main(String[] args) {
 	
 	try (Scanner leia = new Scanner(System.in)) {
-		int n1; 
-		int n2;
-		int n3;
-		int n4; 
+	     float n1, n2, n3, n4; 
+		 
 		
 System.out.println("digite o primeiro numero: ");
- n1 = leia.nextInt();
+ n1 = leia.nextFloat();
 System.out.println("digite o segundo numero:");
- n2 = leia.nextInt();
+ n2 = leia.nextFloat();
 System.out.println("digite o terceiro numero:");
- n3 = leia.nextInt();
+ n3 = leia.nextFloat();
 System.out.println("digite o quarto numero:");
- n4 = leia.nextInt();
+ n4 = leia.nextFloat();
  
- int cal = (n1 * n2) - (n3 * n4 );
+ float cal = (n1 * n2) - (n3 * n4 );
 
 System.out.println("o resultado do calculo é: " + cal);
 	}
