@@ -1,4 +1,4 @@
-package aula_07;
+package aula_23_02;
 
 public interface Nadador extends Atleta{
 
