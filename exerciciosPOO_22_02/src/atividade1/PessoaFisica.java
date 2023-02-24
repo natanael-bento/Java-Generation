@@ -15,6 +15,7 @@ public class PessoaFisica extends Cliente {
 
 	public void setRg(String rg) {
 		this.rg = rg;
+		
 	}
 	public void visualizar() {
 		super.visualizar();
