@@ -57,7 +57,7 @@ public class Funcionario {
 	}
 	
  public void visualizar() {
-		 
+		 System.out.println("\n");
          System.out.println("Nome do Funcionario: " + this.nome);
          System.out.println("n° crachá: " + this.id);
          System.out.println("Setor: " + this.setor);

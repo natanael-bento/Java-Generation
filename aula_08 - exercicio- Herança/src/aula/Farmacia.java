@@ -1,6 +1,6 @@
 package aula;
 
-public class Farmacia {
+public abstract class Farmacia {
 
 	private long id;
 	private String nome;
@@ -8,8 +8,9 @@ public class Farmacia {
 	private String fabricante;
 	private String foto;
 	private float preco;
+	private int tipo;
 	
-	public Farmacia( long id, String nome, String nomeComercial, String fabricante, String foto,  float preco) {
+	public Farmacia( long id, String nome, String nomeComercial, String fabricante, String foto,  float preco, int tipo) {
 		
 		this.id = id;
 		this.nome = nome;
@@ -17,7 +18,10 @@ public class Farmacia {
 		this.fabricante = fabricante;
 		this.foto = foto;
 		this.preco = preco;
+		this.tipo = tipo;
 	}
+
+	
 
 	public String getNome() {
 		return nome;
@@ -67,26 +71,37 @@ public class Farmacia {
 		this.preco = preco;
 	}
 	
+	public int getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(int tipo) {
+		this.tipo = tipo;
+	}
+	public abstract void reajuste(float percentual);
+	
 	public void visualizar() {
 		
+		String tipo = "";
+		
+		switch(this.tipo) {
+		case 1 -> tipo = "medicamento";
+		case 2 -> tipo = "Perfumaria";
+		}
 		System.out.println("**********************************");
 		System.out.println("         dados do produto         ");
 		System.out.println("**********************************");
 		System.out.println("\nid" + this.id);
-		System.out.println("\nnome" + this.nome);
-		System.out.println("\nnome Comercial:" + this.nomeComercial);
-		System.out.println("\nfabricante:" + this.fabricante);
-		System.out.println("\nfoto:" + this.foto);
-		System.out.println("\npreço:" + this.preco);
+		System.out.println("\nNome" + this.nome);
+		System.out.println("\nNome Comercial:" + this.nomeComercial);
+		System.out.println("\nFabricante:" + this.fabricante);
+		System.out.println("\nFoto:" + this.foto);
+		System.out.println("\nPreço:" + this.preco);
+		System.out.println("\nCategoria:" + tipo);
+	
+	
+	
 	}
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 }

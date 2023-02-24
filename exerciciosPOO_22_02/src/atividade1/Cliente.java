@@ -2,11 +2,11 @@ package atividade1;
 
 public class Cliente {
 	
-	private String Nome;
-	private String cpf;
-	private String email;
-	private String endereco;
-	private String nTelefone;
+	protected String Nome;
+	protected String cpf;
+	protected String email;
+	protected String endereco;
+	protected String nTelefone;
 	
 	public Cliente(String nome, String cpf, String email, String endereco, String nTelefone) {
 		Nome = nome;
@@ -57,7 +57,7 @@ public class Cliente {
 	}
 	
 	 public void visualizar() {
-		 
+		 System.out.println("\n");
          System.out.println("Nome do cliente: " + this.Nome);
          System.out.println("CPF: " + this.cpf);
          System.out.println("Email: " + this.email);
