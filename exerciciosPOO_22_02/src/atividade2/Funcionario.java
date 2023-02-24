@@ -9,6 +9,7 @@ public class Funcionario {
 	private float salario;
 	
 	public Funcionario(String nome, String id, String setor, String cargo, float salario) {
+		
 		this.nome = nome;
 		this.id = id;
 		this.setor = setor;
